@@ -7,7 +7,8 @@
 
 .three article p{margin:.55rem 0 0;color:var(--muted);font-size:.96rem;line-height:1.55}.three article h3{margin:.15rem 0 0;font-size:1.15rem;line-height:1.25}
 
-/* Consolidated final state */
+/* MASTER consolidated overrides */
 .dark .grid article h4{margin:.35rem 0 .7rem;color:#2878ff;font-size:1rem;line-height:1.35}
+.dark .grid article p{margin-top:.5rem}
 .company img,.company .text-logo{border:none!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;padding:0!important}
-.btn-cv{background:#2878ff!important}.btn-linkedin{background:#0a66c2!important}.btn-contact{background:#d1d5db!important;color:#172033!important}.contact-actions{display:flex!important;justify-content:center;align-items:center;gap:1.75rem!important;flex-wrap:wrap}
+.btn-cv{background:#2878ff!important}.btn-linkedin{background:#0a66c2!important}.btn-contact{background:#d1d5db!important;color:#172033!important}.btn-contact:hover{background:#c2c7ce!important}.contact-actions{display:flex!important;justify-content:center;align-items:center;gap:1.75rem!important;flex-wrap:wrap}
