@@ -12,3 +12,24 @@
 .dark .grid article p{margin-top:.5rem}
 .company img,.company .text-logo{border:none!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;padding:0!important}
 .btn-cv{background:#2878ff!important}.btn-linkedin{background:#0a66c2!important}.btn-contact{background:#d1d5db!important;color:#172033!important}.btn-contact:hover{background:#c2c7ce!important}.contact-actions{display:flex!important;justify-content:center;align-items:center;gap:1.75rem!important;flex-wrap:wrap}
+
+/* Responsive navigation merged onto LATEST-FULL */
+header{height:auto;min-height:78px;gap:1rem}
+header nav{flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:900px){
+  header{padding:.8rem 1rem;align-items:center}
+  header strong{flex:1 1 auto;min-width:150px}
+  header nav{display:grid;grid-template-columns:repeat(3,auto);gap:.45rem;flex:0 0 auto}
+  header nav>a:not(.btn){display:none}
+  header nav .btn{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:.65rem .8rem;font-size:.76rem;line-height:1.1}
+}
+@media(max-width:620px){
+  header{display:grid;grid-template-columns:1fr;padding:.75rem 1rem;gap:.65rem}
+  header strong{width:100%}
+  header nav{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+  header nav .btn{width:100%;min-width:0;padding:.68rem .35rem;font-size:.72rem;text-align:center}
+}
+@media(max-width:360px){
+  header nav{grid-template-columns:1fr 1fr}
+  header nav .btn-contact{grid-column:1 / -1}
+}
