@@ -33,3 +33,6 @@ header nav{flex-wrap:wrap;justify-content:flex-end}
   header nav{grid-template-columns:1fr 1fr}
   header nav .btn-contact{grid-column:1 / -1}
 }
+
+/* Impact count-up animation */
+.impact-counter{display:inline-block;min-width:3ch;font-variant-numeric:tabular-nums}
