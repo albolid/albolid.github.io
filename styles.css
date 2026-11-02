@@ -37,29 +37,13 @@ header nav{flex-wrap:wrap;justify-content:flex-end}
 /* Impact count-up animation */
 .impact-counter{display:inline-block;min-width:3ch;font-variant-numeric:tabular-nums}
 
-/* Compact sticky header */
-header{
-  min-height:60px;
-  padding:0.45rem 4vw;
-  gap:.75rem;
-  transition:min-height .2s ease,padding .2s ease,box-shadow .2s ease;
-  box-shadow:0 2px 12px rgba(7,26,61,.06);
-}
-header strong{font-size:1.02rem;line-height:1.15;font-weight:700}
-header small{font-size:.58rem;font-weight:500;margin-top:.12rem}
-header nav{gap:.7rem}
-header nav>a:not(.btn){font-size:.8rem;font-weight:600}
-header nav .btn{padding:.52rem .78rem;font-size:.76rem;font-weight:700}
-
-@media(max-width:900px){
-  header{min-height:58px;padding:.5rem .8rem}
-  header nav{gap:.35rem}
-  header nav .btn{padding:.5rem .65rem;font-size:.7rem}
-}
-@media(max-width:620px){
-  header{padding:.5rem .8rem;gap:.45rem}
-  header strong{font-size:.96rem}
-  header small{font-size:.55rem}
-  header nav{gap:.35rem}
-  header nav .btn{padding:.52rem .28rem;font-size:.68rem}
-}
+/* Compact header only after scrolling */
+header{transition:min-height .22s ease,padding .22s ease,box-shadow .22s ease,background .22s ease}
+header.is-scrolled{min-height:54px!important;height:54px!important;padding:.28rem 4vw!important;box-shadow:0 2px 12px rgba(7,26,61,.08)}
+header.is-scrolled strong{font-size:.94rem!important;line-height:1.05;font-weight:650}
+header.is-scrolled small{font-size:.52rem!important;font-weight:500;margin-top:.08rem}
+header.is-scrolled nav{gap:.58rem!important;flex-wrap:nowrap}
+header.is-scrolled nav>a:not(.btn){font-size:.74rem!important;font-weight:600}
+header.is-scrolled nav .btn{padding:.42rem .68rem!important;font-size:.70rem!important;font-weight:700}
+@media(max-width:900px){header.is-scrolled{min-height:52px!important;height:auto!important;padding:.38rem .8rem!important}header.is-scrolled nav{gap:.3rem!important}header.is-scrolled nav .btn{padding:.44rem .58rem!important;font-size:.66rem!important}}
+@media(max-width:620px){header.is-scrolled{height:auto!important;padding:.42rem .8rem!important;gap:.35rem!important}header.is-scrolled strong{font-size:.9rem!important}header.is-scrolled small{display:none}header.is-scrolled nav .btn{padding:.46rem .25rem!important;font-size:.64rem!important}}
