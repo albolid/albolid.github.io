@@ -36,3 +36,30 @@ header nav{flex-wrap:wrap;justify-content:flex-end}
 
 /* Impact count-up animation */
 .impact-counter{display:inline-block;min-width:3ch;font-variant-numeric:tabular-nums}
+
+/* Compact sticky header */
+header{
+  min-height:60px;
+  padding:0.45rem 4vw;
+  gap:.75rem;
+  transition:min-height .2s ease,padding .2s ease,box-shadow .2s ease;
+  box-shadow:0 2px 12px rgba(7,26,61,.06);
+}
+header strong{font-size:1.02rem;line-height:1.15;font-weight:700}
+header small{font-size:.58rem;font-weight:500;margin-top:.12rem}
+header nav{gap:.7rem}
+header nav>a:not(.btn){font-size:.8rem;font-weight:600}
+header nav .btn{padding:.52rem .78rem;font-size:.76rem;font-weight:700}
+
+@media(max-width:900px){
+  header{min-height:58px;padding:.5rem .8rem}
+  header nav{gap:.35rem}
+  header nav .btn{padding:.5rem .65rem;font-size:.7rem}
+}
+@media(max-width:620px){
+  header{padding:.5rem .8rem;gap:.45rem}
+  header strong{font-size:.96rem}
+  header small{font-size:.55rem}
+  header nav{gap:.35rem}
+  header nav .btn{padding:.52rem .28rem;font-size:.68rem}
+}
