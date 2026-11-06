@@ -47,3 +47,8 @@ header.is-scrolled nav>a:not(.btn){font-size:.74rem!important;font-weight:600}
 header.is-scrolled nav .btn{padding:.42rem .68rem!important;font-size:.70rem!important;font-weight:700}
 @media(max-width:900px){header.is-scrolled{min-height:52px!important;height:auto!important;padding:.38rem .8rem!important}header.is-scrolled nav{gap:.3rem!important}header.is-scrolled nav .btn{padding:.44rem .58rem!important;font-size:.66rem!important}}
 @media(max-width:620px){header.is-scrolled{height:auto!important;padding:.42rem .8rem!important;gap:.35rem!important}header.is-scrolled strong{font-size:.9rem!important}header.is-scrolled small{display:none}header.is-scrolled nav .btn{padding:.46rem .25rem!important;font-size:.64rem!important}}
+
+/* LinkedIn and email button icons */
+.btn-linkedin,.btn-contact{display:inline-flex!important;align-items:center!important;justify-content:center;gap:.48rem!important}
+.btn-linkedin .button-label,.btn-contact .button-label{display:inline-flex;align-items:center;line-height:1}
+.linkedin-button-icon{width:19px;height:19px;flex:0 0 19px;display:inline-flex;align-items:center;justify-content:center;border-radius:3px;background:#fff;color:#0a66c2;font-size:.72rem;font-weight:900;line-height:19px}
